@@ -1,0 +1,49 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    float First, Second;
+    float addition,multiplication,subtraction,division,modulus;
+     int choice,again;
+     cout<<"\t \t \t \t CALCULATORS"<<endl;
+    cout<<"Enter the First Number:\n";
+    cin>>First;
+    cout<<"Enter the Second Number:\n";
+    cin>>Second;
+    do{
+    cout<<"enter your choice \n";
+    cout<<"Press 1 for Addition\n";
+    cout<<"Press 2 for Subtraction\n";
+    cout<<"Press 3 for Multiplication\n";
+    cout<<"Press 4 for Division\n";
+    
+    cin>>choice;
+
+    
+     switch(choice)
+    
+    {
+        case 1:addition=First+Second;
+              cout<<"ADDITION="<<addition; 
+              break;
+        case 2:subtraction=First-Second;
+              cout<<"SUBTRACTION="<<subtraction;
+                break;
+        case 3:multiplication=First*Second;
+              cout<<"MULTIPLICATION="<<multiplication;
+                break;
+        case 4:division=First/Second;
+             cout<<"DIVISION="<<division;
+               break;
+       
+        default : cout<<"THE OPERATION IS SUPPORT";
+    }
+    cout<<endl<<"DO YOU WANT TO THE OPERATION AGAIN PRESS  1.YES 2.NO"<<endl;
+    cin>>again;
+}
+    while(again==1);
+     return 0;       
+} 
+    
+
+
